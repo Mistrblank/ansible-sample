@@ -1,0 +1,7 @@
+---
+
+- src: geerlingguy.logstash
+
+- src: geerlingguy.elasticsearch
+
+- src: geerlingguy.kibana
