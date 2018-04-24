@@ -3,7 +3,4 @@
 - name: An Elkstack Playbook
   hosts: all
   roles: 
-    - ansible-role-java
-    - ansible-role-logstash
-    - ansible-role-elasticsearch
-    - ansible-role-kibana
+    - geerlingguy.java
