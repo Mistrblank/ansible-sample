@@ -7,3 +7,6 @@
 [submodule "roles/ansible-role-kibana"]
 	path = roles/ansible-role-kibana
 	url = https://github.com/geerlingguy/ansible-role-kibana.git
+[submodule "roles/ansible-role-java"]
+	path = roles/ansible-role-java
+	url = https://github.com/geerlingguy/ansible-role-java.git
