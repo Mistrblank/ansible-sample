@@ -1,0 +1,25 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: modify /etc/ssh/sshd_config
+      lineinfile: 
+        path: /etc/ssh/sshd_config
+        regexp: Banner
+        line: Banner /etc/ssh/sshd-banner
+        backup: yes
+        state: present
+
+    - name: copy the banner file to host
+      copy:
+        dest: /etc/ssh/sshd-banner
+        src: files/sshd-banner
+        mode: 600
+        owner: root
+        group: root
+
+    - name: restart sshd
+      service: 
+        name: sshd
+        state: restarted
