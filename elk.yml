@@ -3,6 +3,6 @@
 - name: An Elkstack Playbook
   hosts: all
   roles: 
-    - geerlingguy.logstash
-    - geerlingguy.elasticsearch
-    - geerlingguy.kibana
+    - ansible-role-logstash
+    - ansible-role-elasticsearch
+    - ansible-role-kibana
