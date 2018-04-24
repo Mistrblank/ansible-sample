@@ -1,0 +1,7 @@
+---
+
+- name: An Elkstack Playbook
+  roles: 
+    - geerlingguy.logstash
+    - geerlingguy.elasticsearch
+    - geerlingguy.kibana
