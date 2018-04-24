@@ -1,0 +1,9 @@
+[submodule "roles/ansible-role-elasticsearch"]
+	path = roles/ansible-role-elasticsearch
+	url = https://github.com/geerlingguy/ansible-role-elasticsearch.git
+[submodule "roles/ansible-role-logstash"]
+	path = roles/ansible-role-logstash
+	url = https://github.com/geerlingguy/ansible-role-logstash.git
+[submodule "roles/ansible-role-kibana"]
+	path = roles/ansible-role-kibana
+	url = https://github.com/geerlingguy/ansible-role-kibana.git
