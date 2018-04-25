@@ -3,6 +3,13 @@
   become: true
 
   tasks:
+
+  - name: Execute hostname
+    shell: hostname
+    register: output
+
+  - debug:
+    var: output.stdout
   # Normally We set hostname with the following command:
   #   # hostnaemctl set-hostname your-new-hostname
   # Ansible has a module for that though
@@ -13,5 +20,9 @@
     
   - name: Display your hostname
     command: hostname
+    register: output
+
+  - debug:
+    var: output.stdout
 
     
