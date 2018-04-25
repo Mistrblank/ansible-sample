@@ -11,7 +11,7 @@ tasks:
 # The variable "hostname" will need to be defined to run this
   - name: Set your hostname
     hostname: 
-      name: {{ hostname }}
+      name: "{{ hostname }}""
     
   - name: Display your hostname
     command: hostname
