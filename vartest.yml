@@ -9,7 +9,8 @@
     register: output
 
   - debug:
-    var: output.stdout
+      var: output.stdout
+
   # Normally We set hostname with the following command:
   #   # hostnaemctl set-hostname your-new-hostname
   # Ansible has a module for that though
@@ -23,6 +24,6 @@
     register: output
 
   - debug:
-    var: output.stdout
+      var: output.stdout
 
     
