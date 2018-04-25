@@ -1,17 +1,17 @@
 ---
-hosts: all
-become: true
+- hosts: all
+  become: true
 
-tasks:
-# Normally We set hostname with the following command:
-#   # hostnaemctl set-hostname your-new-hostname
-# Ansible has a module for that though
-# The variable "hostname" will need to be defined to run this
-  - name: Set your hostname
-    hostname: 
-      name: "{{ hostname }}"
+ tasks:
+ # Normally We set hostname with the following command:
+ #   # hostnaemctl set-hostname your-new-hostname
+ # Ansible has a module for that though
+ # The variable "hostname" will need to be defined to run this
+   - name: Set your hostname
+     hostname: 
+       name: "{{ hostname }}"
     
-  - name: Display your hostname
-    command: hostname
+    - name: Display your hostname
+      command: hostname
 
     
