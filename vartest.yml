@@ -1,8 +1,6 @@
 ---
 hosts: all
 become: true
-
-
 tasks:
 
 # Normally We set hostname with the following command:
