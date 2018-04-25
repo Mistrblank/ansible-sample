@@ -5,8 +5,9 @@
   tasks:
 
   - name: Execute hostname
-    shell: hostname
+    command: hostname
     register: output
+    changed_when: false
 
   - debug:
       var: output.stdout
@@ -22,6 +23,7 @@
   - name: Display your hostname
     command: hostname
     register: output
+    changed_when: false
 
   - debug:
       var: output.stdout
